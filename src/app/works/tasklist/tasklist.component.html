@@ -1,0 +1,10 @@
+<header class="headerTask">
+    <section class="CountTask">
+        <h2>Count of Task {{ numberOfTanks }}</h2>
+    </section>
+    <section class="inputTask">
+        <input type="text" class="inputTask__input" [(ngModel)]="task" name="task">
+        <button class="inputTask__button" (click)="sendTheTask()">Add</button>
+    </section>
+</header>
+<app-table [getTask]="tasks" (number)="getNumber($event)"></app-table>

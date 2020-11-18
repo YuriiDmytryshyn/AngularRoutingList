@@ -1,0 +1,16 @@
+<section class="container">
+    <div class="words">
+        <h3>Bad words: <span class="words__bad">{{ badWords }}</span></h3>
+    </div>
+    <div class="input">
+        <input [placeholder]="inputPlaceholder" [style.BorderColor]="inputBorderColor" [(ngModel)]="words" name="words"
+            type="input__text" id="input__text">
+        <button (click)="addWords()" class="input__add">Add</button>
+        <button (click)="resetAll()" class="input__reset">Reset</button>
+    </div>
+    <div class="text">
+        <textarea [placeholder]="textareaPlaceholder" [style.BorderColor]="textareaBorderColor" [(ngModel)]="text"
+            name="text" class="text__textarea"></textarea>
+        <button (click)="cenzorWord()" class="cenzor">Cenzor</button>
+    </div>
+</section>

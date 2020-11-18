@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgba(211, 211, 211, 0.435);
+  border-radius: 4px;
+  width: 500px;
+  height: 300px;
+  margin: 130px auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.words {
+  font-size: 20px;
+  height: 40px;
+}
+
+.words__bad {
+  font-size: 18px;
+  color: red;
+}
+
+.input {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#input__text {
+  font-size: 16px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 300px;
+  outline: none;
+
+  &:focus {
+    outline: none;
+    border: 1px solid lightblue;
+    -webkit-box-shadow: 0px 0px 2px 2px lightblue;
+    box-shadow: 0px 0px 2px 2px lightblue;
+  }
+}
+
+.input__add {
+  height: 30px;
+  width: 70px;
+  background-color: gold;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+
+  &:hover {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 1px 1px gold;
+    box-shadow: 0px 0px 1px 1px gold;
+  }
+}
+
+.input__reset {
+  color: white;
+  background-color: crimson;
+  height: 30px;
+  width: 70px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+
+  &:hover {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 1px 1px crimson;
+    box-shadow: 0px 0px 1px 1px crimson;
+  }
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.text__textarea {
+  padding: 5px;
+  height: 100px;
+  width: 480px;
+  border-radius: 4px;
+  resize: none;
+
+  &:focus {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.cenzor {
+  margin-top: 20px;
+  width: 480px;
+  height: 30px;
+  background-color: green;
+  color: white;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid green;
+  &:active {
+    outline: none;
+    border: 1px solid green;
+    box-shadow: 0px 0px 1px 1px green;
+  }
+}
